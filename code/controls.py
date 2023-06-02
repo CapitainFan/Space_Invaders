@@ -30,11 +30,11 @@ def events(screen, gun, bullets):
 def create_enemies(screen, aliens):
     alien = Alien(screen)
     alien_width = alien.rect.width
-    alien_number_x = int((630 - 2 * alien_width) / alien_width)
+    alien_number_x = int((650 - 2 * alien_width) / alien_width)
     alien_hight = alien.rect.height
-    alien_number_y = int((660 - 100 - 2 * alien_hight) / alien_hight)
+    alien_number_y = int((650 - 100 - 2 * alien_hight) / alien_hight)
 
-    for row_number in range(alien_number_y-4):
+    for row_number in range(alien_number_y-3):
         for alien_number in range(alien_number_x):
             alien = Alien(screen)
             alien.x = alien_width + alien_width * alien_number

@@ -12,7 +12,7 @@ from stats import Stats
 def run():
     pygame.init()
     pygame.display.set_caption('Space Invaders')
-    screen = pygame.display.set_mode((630, 660))
+    screen = pygame.display.set_mode((650, 660))
     back_ground_color = (0, 0, 0)
     gun = Gun(screen)
     bullets = Group()
